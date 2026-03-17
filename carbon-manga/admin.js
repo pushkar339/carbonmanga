@@ -7,7 +7,7 @@ if (!isAuthorized) {
   window.location.href = "index.html";
 }
 
-const COVER_BASE_PATH = '/images/comics/';
+const COVER_BASE_PATH = '/images/';
 const DEFAULT_INVENTORY = [
   { id: 1, title: 'Chainsaw Man (VOL. 1)', price: 749, stock: 'In Stock', cover: COVER_BASE_PATH + 'chainsawman.png', genre: 'Action' },
   { id: 2, title: 'Jujutsu Kaisen (VOL. 3)', price: 799, stock: '5 left', cover: COVER_BASE_PATH + 'jujutsu_kaisen.png', genre: 'Dark Fantasy' },
