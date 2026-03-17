@@ -7,18 +7,15 @@ if (!isAuthorized) {
   window.location.href = "index.html";
 }
 
-// Base path for comics images
-const COMICS_BASE = '/comics/';
-
 const DEFAULT_INVENTORY = [
-  { id: 1, title: 'Chainsaw Man (VOL. 1)', price: 749, stock: 'In Stock', cover: COMICS_BASE + 'chainsawman.png', genre: 'Action' },
-  { id: 2, title: 'Jujutsu Kaisen (VOL. 3)', price: 799, stock: '5 left', cover: COMICS_BASE + 'jujutsu_kaisen.png', genre: 'Dark Fantasy' },
-  { id: 3, title: 'Demon Slayer (VOL. 2)', price: 699, stock: 'Sold Out', cover: COMICS_BASE + 'demon_slayer.png', genre: 'Action' },
-  { id: 4, title: 'Attack on Titan (VOL. 5)', price: 849, stock: '3 left', cover: COMICS_BASE + 'attack_on_titan.png', genre: 'Action' },
-  { id: 5, title: 'My Hero Academia (VOL. 7)', price: 649, stock: 'In Stock', cover: COMICS_BASE + 'my_hero_academia.png', genre: 'Action' },
-  { id: 6, title: 'Tokyo Revengers (VOL. 4)', price: 749, stock: 'Sold Out', cover: COMICS_BASE + 'tokyo_ravegers.png', genre: 'Action' },
-  { id: 7, title: 'One Piece (VOL. 10)', price: 599, stock: 'In Stock', cover: COMICS_BASE + 'one_piece.png', genre: 'Action' },
-  { id: 8, title: 'Naruto (VOL. 6)', price: 549, stock: 'In Stock', cover: COMICS_BASE + 'naruto.png', genre: 'Action' },
+  { id: 1, title: 'Chainsaw Man (VOL. 1)', price: 749, stock: 'In Stock', cover: '/comics/chainsawman.png', genre: 'Action' },
+  { id: 2, title: 'Jujutsu Kaisen (VOL. 3)', price: 799, stock: '5 left', cover: '/comics/jujutsu_kaisen.png', genre: 'Dark Fantasy' },
+  { id: 3, title: 'Demon Slayer (VOL. 2)', price: 699, stock: 'Sold Out', cover: '/comics/demon_slayer.png', genre: 'Action' },
+  { id: 4, title: 'Attack on Titan (VOL. 5)', price: 849, stock: '3 left', cover: '/comics/attack_on_titan.png', genre: 'Action' },
+  { id: 5, title: 'My Hero Academia (VOL. 7)', price: 649, stock: 'In Stock', cover: '/comics/my_hero_academia.png', genre: 'Action' },
+  { id: 6, title: 'Tokyo Revengers (VOL. 4)', price: 749, stock: 'Sold Out', cover: '/comics/tokyo_ravegers.png', genre: 'Action' },
+  { id: 7, title: 'One Piece (VOL. 10)', price: 599, stock: 'In Stock', cover: '/comics/one_piece.png', genre: 'Action' },
+  { id: 8, title: 'Naruto (VOL. 6)', price: 549, stock: 'In Stock', cover: '/comics/naruto.png', genre: 'Action' },
 ];
 
 const DEFAULT_DEALS = [
