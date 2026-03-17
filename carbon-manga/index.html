@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Manga | Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header id="navbar"></header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="animate-fade"></section>
+
+      <!-- Store Section -->
+      <section id="trending" class="container" style="margin-top: 4rem;">
+        <h2 class="section-title">New Arrivals</h2>
+        <div id="trending-list" class="scroll-container">
+          <!-- Manga Cards will be injected here -->
+        </div>
+      </section>
+
+      <!-- Genre Discovery Section -->
+      <section id="genres" class="container" style="margin-top: 4rem;">
+        <h2 class="section-title">Explore Genres</h2>
+        <div id="genre-grid" class="genre-grid">
+          <!-- Genre tiles will be injected here -->
+        </div>
+      </section>
+
+      <!-- Popular Manga Section -->
+      <section id="popular" class="container" style="margin-top: 4rem;">
+        <h2 class="section-title">Popular Manga</h2>
+        <div id="popular-grid" class="manga-grid">
+          <!-- Popular manga cards will be injected here -->
+        </div>
+      </section>
+
+      <!-- Community Section -->
+      <section id="community" class="container" style="margin-top: 4rem;">
+        <h2 class="section-title">Loved by Manga Fans</h2>
+        <div id="testimonial-grid" class="testimonial-grid">
+          <!-- Testimonials will be injected here -->
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="cta" class="container" style="margin-top: 6rem; margin-bottom: 6rem;"></section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal-overlay" class="cart-modal-overlay">
+      <div class="cart-modal">
+        <div class="cart-header">
+          <h2>YOUR CART</h2>
+          <button id="cart-close-btn" class="cart-close-btn">X</button>
+        </div>
+        <div id="cart-items" class="cart-items-container">
+          <!-- Cart items will be injected here -->
+        </div>
+        <div class="cart-footer">
+          <div class="cart-user-info" style="margin-bottom: 1rem;">
+            <input type="text" id="cart-user-name" class="cart-input" placeholder="Enter your Name" required />
+          </div>
+          <div class="cart-total">
+            <span>TOTAL:</span>
+            <span id="cart-total-price">₹0</span>
+          </div>
+          <button id="cart-checkout-btn" class="cart-checkout-btn">ORDER VIA WHATSAPP</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Checkout Confirmation Modal -->
+    <div id="checkout-confirm-overlay" class="admin-login-overlay">
+      <div class="admin-login-modal">
+        <button id="confirm-close-btn" class="admin-close-btn">X</button>
+        <div class="admin-login-content">
+          <h2 class="modal-title">CONFIRM<br/>ORDER</h2>
+          <p id="confirm-details-text" class="modal-desc" style="white-space: pre-line; margin-bottom: 1.5rem; text-align: left; padding: 1rem; background: var(--panel-gray); border: 2px solid var(--ink-black); color: var(--ink-black); font-weight: 600; font-size: 0.9rem; line-height: 1.4;"></p>
+          <div style="display: flex; gap: 1rem;">
+            <button id="confirm-cancel-btn" class="btn-filled-gray" style="flex: 1; min-width: 0;">CANCEL</button>
+            <button id="confirm-submit-btn" class="admin-submit-btn" style="flex: 1; min-width: 0; margin-top: 0; font-size: 0.9rem; padding: 12px;">YES, ORDER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
